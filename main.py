@@ -2,6 +2,9 @@ import pygame
 
 pygame.init()
 window = pygame.display.set_mode((1200, 400))
+pygame.display.set_caption('Self Driving Simulator')
+icon = pygame.image.load('tesla.png')
+pygame.display.set_icon(icon)
 track = pygame.image.load('track6.png')
 car = pygame.image.load('tesla.png')
 car = pygame.transform.scale(car, (30, 60))
